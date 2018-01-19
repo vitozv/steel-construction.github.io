@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+.clearfix::after {
+        display: block;
+        content: '';
+        clear: both;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 180px;
+    transition: 0.3s;
+}
+
+nav:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+header {
+    width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 55px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__item > a {
+    display: inline-block;
+    font-family: 'Pathway Gothic One';
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: -6px;
+    padding: 10px 8px 5px 8px;
+    text-align: center;
+    list-style: none;
+}
+
+.submenu__item > a {
+    display: inline-block;
+    font-family: 'Pathway Gothic One';
+    font-size: 20px;
+    color: #6b7488;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.menu__item > a:hover {
+    color: #263555;
+}
+
+.submenu__item > a:hover {
+    background-color: #6b7488;
+    color: white;
+}
+
+.menu__item:hover > .submenu {
+    display: block;
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;    
+}
+
+.submenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 2.5px 5px 2.5px;
+    border-color: transparent transparent white transparent;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    color: #263555;
+    font-family: dorsa;
+    font-size: 60px;
+    line-height: 140px;
+}
+
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+main {
+    width: 1025px;
+    margin: auto;
+    padding: 110px 60px 140px 60px;
+    background-color: rgb(255, 255, 255);    
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    font-size: 32px;
+    color: #263555; 
+    margin-bottom: 50px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery>img {
+    flex-basis: 32%;
+    margin-bottom: 40px;
+}
+
+.gallery>img:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.gallery>img:nth-last-child(2) {
+    margin-bottom: 0px;
+}
+
+.gallery>img:nth-last-child(3) {
+    margin-bottom: 0px;
+}
+
+footer {
+    width: 1025px;
+    height: 130px;
+    padding-top: 45px;
+    margin: auto;
+    background-color: #30455B;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.footer-link {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'open sans condensed';
+    font-size: 16px;
+    line-height: 14px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-link:nth-of-type(2) {
+    margin-bottom: 0px;
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.contact-text1 {
+    font-family: 'open sans condensed';
+    font-size: 16px;
+    line-height: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-text2 {
+    font-family: 'arial regular';
+    font-size: 12px;
+    color: white;
+}
+
+.icons {
+    width: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.bg-twitter {
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -70px -70px;
+}
+
+.bg-facebook {
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+
+.bg-googleplus {
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -70px -10px;
+}
+
+.bg-linkedin {
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -10px -70px;
+}
+
+.copyrigt {
+    font-family: arial;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.copyrigt > a {
+    text-decoration: none;
+    font-family: arial;
+    font-size: 12px;
+    color: white;
+}
+
+.copyrigt > a:hover {
+    text-decoration: underline;
+}
